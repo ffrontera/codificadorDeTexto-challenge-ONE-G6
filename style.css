@@ -1,6 +1,11 @@
+body{ 
+    min-height: 100vh;
+}
+
 body, #entradaTexto{
     background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
 }
 
 header img{
@@ -17,6 +22,10 @@ header img{
     outline: none;
 }
 
+#entradaTexto, input, .texto{
+    font-size: 3.5vh;
+}
+
 .main-entradaTexto__areaTexto p{
     color: darkgrey;
 }
@@ -24,6 +33,9 @@ header img{
 input{
     border: 1px solid #0A3871;
     border-radius: 15px;
+    padding: 1vh 0;
+    margin: 1vh 0;
+    width: 45%; 
 }
 
 input:disabled{
@@ -44,6 +56,7 @@ input:disabled{
 #copiar{
     color: #0A3871;
     background-color: white;
+    width: 95%;
 }
 
 .main-entradaTexto__botones, .boton, .main-salidaTexto__antes{
@@ -62,6 +75,7 @@ input:disabled{
 h2{
     font-weight: bold;
     font-size: 3vh;
+    margin-bottom: 1vh;
 }
 
 footer{
@@ -69,6 +83,7 @@ footer{
     background-color: #0A3871;
     text-align: center;
     color: aliceblue;
+    font-size: 3.5vh;
 }
 
 li{
@@ -97,22 +112,41 @@ li a:hover{
     }
     
     main{
-        min-height: 80vh;
+        min-height: 74vh;
         margin: 0 2vh;
     }
     
-    #entradaTexto, input, .texto{
-        font-size: 3.5vh;
-    }
-
     input{
         width: 95%;
-        padding: 1vh 0;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    
+    header{
+        margin: 4vh 0;
+    }
+
+    header img{
+        height: 5vh;
+    }
+
+    main{
+        margin: 0 4vh;
+        height: 76vh;
+    }
+    
+    #ntradaTexto{
+        height: 60vh;
+    }
+
+    .main-salidaTexto{
         margin: 1vh 0;
     }
 
-    footer{
-        font-size: 3.5vh;
+    .main-salidaTexto__antes img{
+        display: none;
     }
 
     footer p{
@@ -120,8 +154,38 @@ li a:hover{
     }
 }
 
-@media screen and (max-width: 768px){
-    .main-salidaTexto__antes img{
-        display: none;
+@media screen and (min-width:769px) {
+    
+    header, main, .main-entradaTexto, .main-salidaTexto{
+        display: inline-block;
+        height: 90vh;
+    }
+
+    header{
+        width: 10vw;
+        position: absolute;
+        
+    }
+
+    header img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    main{
+        width: 87vw;
+    }
+    .main-entradaTexto, .main-salidaTexto{
+        height: 100%;
+    }
+
+    .main-entradaTexto{
+        width: 70%;
+    }
+
+    .main-salidaTexto{
+        width: 30%;
+        height: 100%;
+        float: right;
     }
 }
