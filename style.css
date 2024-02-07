@@ -9,7 +9,7 @@ header img{
 }
 
 #entradaTexto{
-    width: 100%;
+    width: 98%;
     border: none;
     resize: none;
 }
@@ -66,7 +66,10 @@ input:disabled{
 }
 
 .main-salidaTexto__antes{
-    padding: 2vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h2{
@@ -95,7 +98,7 @@ li a:hover{
     color: lightslategray;
 }
 
-@media screen and (max-width: 320px){
+@media (max-width: 320px){
     
     .main-entradaTexto__areaTexto p{
         font-size: 2vh;
@@ -106,7 +109,7 @@ li a:hover{
     }
 }
 
-@media screen and (max-width: 425px) {
+@media (max-width: 430px) {
     
     input{
         width: 95%;
@@ -114,7 +117,7 @@ li a:hover{
 
 }
 
-@media screen and (max-width: 768px){
+@media (max-width: 912px){
     
     header{
         margin: 4vh 0 2vh;
@@ -135,6 +138,7 @@ li a:hover{
 
     .main-salidaTexto{
         margin: 1vh 0;
+        height: 20%;
     }
 
     .main-salidaTexto__antes img{
@@ -146,17 +150,27 @@ li a:hover{
     }
 }
 
-@media screen and (min-width:769px) {
+@media (min-width: 430px) and (max-width: 612px){
+
+    #entradaTexto{
+        height: 43vh;
+    }
+}
+
+@media (min-width:913px) {
     
+    header, main{
+        height: 80vh;
+    }
+
     header, main, .main-entradaTexto, .main-salidaTexto{
         display: inline-block;
-        height: 90vh;
     }
 
     header{
         width: 10vw;
-        position: absolute;
-        
+        vertical-align: top;
+        margin-top: 4vh;       
     }
 
     header img{
@@ -165,7 +179,8 @@ li a:hover{
     }
 
     main{
-        width: 87vw;
+        width: 86vw;
+        margin: 4vh 0;
     }
     .main-entradaTexto, .main-salidaTexto{
         height: 100%;
@@ -175,9 +190,30 @@ li a:hover{
         width: 70%;
     }
 
+    .main-entradaTexto__areaTexto{
+        margin-top: 15vh;
+    }
+
+    #entradaTexto{
+        height: 52vh;
+    }
+
+    .main-entradaTexto__botones{
+        text-align: left;
+    
+    }
+
+    .main-entradaTexto__botones input{
+        margin-right: 1vw;
+    }
+
     .main-salidaTexto{
         width: 30%;
         height: 100%;
         float: right;
+    }
+
+    footer p{
+        padding: 1vh;
     }
 }
