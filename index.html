@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/Logo-1.png" alt="Logo alura">
+    </header>
+
+    <main>
+        <div class="main-entradaTexto">
+            <div class="main-entradaTexto__areaTexto">
+                <textarea name="entradaTexto" id="entradaTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="main-entradaTexto__botones">
+                <input type="button" value="Encriptar" id="encriptar" class="botonEntradaTexto">
+                <input type="button" value="Desencriptar" id="desencriptar" class="botonEntradaTexto">   
+            </div>
+        </div>
+
+        <div class="main-salidaTexto">
+            <div class="main-salidaTexto__antes">
+                <img src="img/persona-lupa.png" alt="Persona curiosa">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="main-salidaTexto__despues" hidden="false">
+                <div class="texto">
+                    <p id="main-salidaTexto"></p>
+                </div>
+                <div class="boton">
+                    <input type="button" value="Copiar" id="copiar">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-copyrigth">
+            <p>© Federico Frontera - 2024</p>
+        </div>
+        <div class="footer-socialIcons">
+            <ul>
+                <li> 
+                    <a href="https://www.linkedin.com/in/frontera-federico" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/ffrontera" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

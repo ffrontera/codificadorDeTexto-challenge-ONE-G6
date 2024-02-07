@@ -1,0 +1,127 @@
+body, #entradaTexto{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header img{
+    height: 80%;
+}
+
+#entradaTexto{
+    width: 100%;
+    border: none;
+    resize: none;
+}
+
+#entradaTexto:focus{
+    outline: none;
+}
+
+.main-entradaTexto__areaTexto p{
+    color: darkgrey;
+}
+
+input{
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+}
+
+input:disabled{
+    background-color: lightgray;
+    color: black;
+}
+
+#encriptar{
+    color: aliceblue;
+    background-color: #0A3871;
+}
+
+#desencriptar{
+    color: #0A3871;
+    background-color: aliceblue;
+}
+
+#copiar{
+    color: #0A3871;
+    background-color: white;
+}
+
+.main-entradaTexto__botones, .boton, .main-salidaTexto__antes{
+    text-align: center;
+}
+
+.main-salidaTexto{
+    background-color: white;
+    border-radius: 15px;
+}
+
+.main-salidaTexto__antes{
+    padding: 2vh;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+footer{
+    height: 10vh;
+    background-color: #0A3871;
+    text-align: center;
+    color: aliceblue;
+}
+
+li{
+    display: inline-block;
+}
+
+li a{
+    color: aliceblue;
+}
+
+li a:hover{
+    color: lightslategray;
+}
+
+@media screen and (max-width: 320px){
+    footer p, footer li{
+        font-size: 3vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    header{
+        height: 8vh;
+        margin: 2vh 0 0 -20px;
+    }
+    
+    main{
+        min-height: 80vh;
+        margin: 0 2vh;
+    }
+    
+    #entradaTexto, input, .texto{
+        font-size: 3.5vh;
+    }
+
+    input{
+        width: 95%;
+        padding: 1vh 0;
+        margin: 1vh 0;
+    }
+
+    footer{
+        font-size: 3.5vh;
+    }
+
+    footer p{
+        padding: 1vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main-salidaTexto__antes img{
+        display: none;
+    }
+}
