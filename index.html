@@ -20,28 +20,28 @@
                 <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="main-entradaTexto__botones">
-                <input type="button" value="Encriptar" id="encriptar" class="botonEntradaTexto">
+                <input type="button" onclick="mostrarTexto('encriptar')" value="Encriptar" id="encriptar" class="botonEntradaTexto">
                 <input type="button" value="Desencriptar" id="desencriptar" class="botonEntradaTexto">   
             </div>
         </div>
 
         <div class="main-salidaTexto">
-            <div class="main-salidaTexto__antes">
+            <div class="main-salidaTexto__antes" id="antes">
                 <img src="img/persona-lupa.png" alt="Persona curiosa">
                 <h2>Ningún mensaje fue encontrado</h2>
                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-            <div class="main-salidaTexto__despues" hidden="false">
+            <div class="main-salidaTexto__despues" id="despues" hidden="false">
                 <div class="texto">
                     <p id="main-salidaTexto"></p>
                 </div>
                 <div class="boton">
-                    <input type="button" value="Copiar" id="copiar">
+                    <input type="button" value="Copiar" id="copiar" onclick="copiarTexto()">
                 </div>
             </div>
         </div>
     </main>
-
+    <script src="app.js"></script>
     <footer>
         <div class="footer-copyrigth">
             <p>© Federico Frontera - 2024</p>
