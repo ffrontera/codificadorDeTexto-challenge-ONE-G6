@@ -96,6 +96,11 @@ li a:hover{
 }
 
 @media screen and (max-width: 320px){
+    
+    .main-entradaTexto__areaTexto p{
+        font-size: 2vh;
+    }
+    
     footer p, footer li{
         font-size: 3vh;
     }
