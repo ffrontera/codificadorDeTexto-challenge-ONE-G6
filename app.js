@@ -41,26 +41,30 @@ function desencriptarTexto(texto){
 
     let textoDesencriptado = '';
     
-    for(let indice = 0; indice < texto.length; indice++){
-        const letra = texto[indice];
-        if(letra === 'a'){
-            textoDesencriptado += letra;
-            indice += a.length - 1;
-        } else if (letra === 'e') {
-            textoDesencriptado += letra;
-            indice += e.length - 1;
-        } else if (letra === 'i') {
-            textoDesencriptado += letra;
-            indice += i.length - 1;
-        } else if (letra === 'o') {
-            textoDesencriptado += letra;
-            indice += o.length - 1;
-        } else if (letra == 'u') {
-            textoDesencriptado += letra;
-            indice += u.length - 1; 
-        } else {
-            textoDesencriptado += letra;
+    if (texto.includes(a)||texto.includes(e)||texto.includes(i)||texto.includes(o)||texto.includes(u)){
+        for(let indice = 0; indice < texto.length; indice++){
+            const letra = texto[indice];
+            if(letra === 'a'){
+                textoDesencriptado += letra;
+                indice += a.length - 1;
+            } else if (letra === 'e') {
+                textoDesencriptado += letra;
+                indice += e.length - 1;
+            } else if (letra === 'i') {
+                textoDesencriptado += letra;
+                indice += i.length - 1;
+            } else if (letra === 'o') {
+                textoDesencriptado += letra;
+                indice += o.length - 1;
+            } else if (letra == 'u') {
+                textoDesencriptado += letra;
+                indice += u.length - 1; 
+            } else {
+                textoDesencriptado += letra;
+            }
         }
+    }else{
+        textoDesencriptado = 'El texto ingresado no presenta la encriptacion usada en esta aplicación';
     }
 
     return textoDesencriptado
