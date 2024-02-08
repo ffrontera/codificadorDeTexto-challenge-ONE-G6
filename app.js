@@ -109,7 +109,7 @@ async function copiarTexto(){
 
     alert('¡Mensaje copiado al portapapeles!')
 }
-const permitidos = /^[a-z0-9 ]+$/;
+const permitidos = /^[a-no-z0-9 ]+$/;
 function verificarTexto(texto){
     if (permitidos.test(texto) || texto == ''){
         botonEncriptar.disabled = false; 
