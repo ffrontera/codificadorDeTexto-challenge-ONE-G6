@@ -64,7 +64,7 @@ function desencriptarTexto(texto){
             }
         }
     }else{
-        textoDesencriptado = "El texto ingresado no esta enctiptado o usa una encriptacion diferente";
+        textoDesencriptado = "El texto ingresado no está encriptado o usa una encriptación diferente, para reiniciar el encriptador presione el logo en la parte superior izquierda.";
     }
     
     return textoDesencriptado
