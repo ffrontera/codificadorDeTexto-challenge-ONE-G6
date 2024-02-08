@@ -74,6 +74,7 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 3vh;
 }
 
 h2{
@@ -105,6 +106,7 @@ footer{
 
 li{
     display: inline-block;
+    margin: 0 1vh;
 }
 
 li a{
