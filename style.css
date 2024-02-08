@@ -23,7 +23,7 @@ header img{
 }
 
 #entradaTexto, input, .texto{
-    font-size: 3.5vh;
+    font-size: 3.5dvh;
 }
 
 .main-entradaTexto__areaTexto p{
@@ -33,8 +33,8 @@ header img{
 input{
     border: 1px solid #0A3871;
     border-radius: 15px;
-    padding: 1vh 0;
-    margin: 1vh 0 0;
+    padding: 1dvh 0;
+    margin: 1dvh 0 0;
     width: 45%; 
 }
 
@@ -78,8 +78,8 @@ input{
 
 h2{
     font-weight: bold;
-    font-size: 3vh;
-    margin-bottom: 1vh;
+    font-size: 3dvh;
+    margin-bottom: 1dvh;
 }
 
 .main-salidaTexto__despues{
@@ -92,15 +92,15 @@ h2{
 }
 
 .texto{
-    margin: 1.5vh 1.5vh 0;
+    margin: 1.5dvh 1.5dvh 0;
 }
 
 footer{
-    height: 10vh;
+    height: 10dvh;
     background-color: #0A3871;
     text-align: center;
     color: aliceblue;
-    font-size: 3.5vh;
+    font-size: 3.5dvh;
 }
 
 li{
@@ -118,11 +118,11 @@ li a:hover{
 @media (max-width: 320px){
     
     .main-entradaTexto__areaTexto p{
-        font-size: 2vh;
+        font-size: 2dvh;
     }
     
     footer p, footer li{
-        font-size: 3vh;
+        font-size: 3dvh;
     }
 }
 
@@ -137,25 +137,25 @@ li a:hover{
 @media (max-width: 912px){
     
     header{
-        margin: 4vh 0 2vh;
+        margin: 4dvh 0 2dvh;
     }
 
     header img{
-        height: 5vh;
+        height: 5dvh;
     }
 
     main{
-        margin: 0 1vh;
-        min-height: 78vh;
+        margin: 0 1dvh;
+        min-height: 78dvh;
         height: auto;
     }
     
     #ntradaTexto{
-        height: 54vh;
+        height: 54dvh;
     }
 
     .main-salidaTexto{
-        margin: 1vh 0;
+        margin: 1dvh 0;
         height: 20%;
     }
 
@@ -164,21 +164,21 @@ li a:hover{
     }
 
     footer p{
-        padding: 1vh;
+        padding: 1dvh;
     }
 }
 
 @media (min-width: 430px) and (max-width: 612px){
 
     #entradaTexto{
-        height: 43vh;
+        height: 43dvh;
     }
 }
 
 @media (min-width:913px) {
     
     header, main{
-        height: 80vh;
+        height: 80dvh;
     }
 
     header, main, .main-entradaTexto, .main-salidaTexto{
@@ -188,7 +188,7 @@ li a:hover{
     header{
         width: 10vw;
         vertical-align: top;
-        margin-top: 4vh;       
+        margin-top: 4dvh;       
     }
 
     header img{
@@ -198,7 +198,7 @@ li a:hover{
 
     main{
         width: 86vw;
-        margin: 4vh 0;
+        margin: 4dvh 0;
     }
     .main-entradaTexto, .main-salidaTexto{
         height: 100%;
@@ -209,11 +209,11 @@ li a:hover{
     }
 
     .main-entradaTexto__areaTexto{
-        margin-top: 15vh;
+        margin-top: 15dvh;
     }
 
     #entradaTexto{
-        height: 52vh;
+        height: 52dvh;
     }
 
     .main-entradaTexto__botones{
@@ -232,12 +232,12 @@ li a:hover{
     }
 
     .texto{
-        height: 69vh;
-        margin: 1.5vh 1.5vh 0;
+        height: 69dvh;
+        margin: 1.5dvh 1.5dvh 0;
         overflow-y: auto;
     }
 
     footer p{
-        padding: 1vh;
+        padding: 1dvh;
     }
 }
