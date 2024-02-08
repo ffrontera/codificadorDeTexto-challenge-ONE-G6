@@ -68,7 +68,7 @@ function desencriptarTexto(texto){
 function mostrarTexto(accion){
     
     salidaTextoAntes.style.display = "none";
-    salidaTextoDespues.removeAttribute("hidden");
+    salidaTextoDespues.style.display = 'flex';
     
     if (accion === 'encriptar'){
         parrafoSalidaTexto.innerHTML = encriptarTexto(entradaTexto.value);
@@ -92,7 +92,7 @@ async function copiarTexto(){
       }
     
     salidaTextoAntes.style.display = "flex"
-    salidaTextoDespues.setAttribute("hidden", "false");
+    salidaTextoDespues.style.display = 'none';
     
     botonEncriptar.disabled = false; 
     botonDesencriptar.disabled = false;
