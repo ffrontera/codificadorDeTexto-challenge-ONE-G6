@@ -11,6 +11,7 @@ const salidaTextoAntes = document.getElementById("antes");
 const parrafoSalidaTexto = document.getElementById("main-salidaTexto");
 const botonEncriptar = document.getElementById('encriptar');
 const botonDesencriptar = document.getElementById('desencriptar');
+const textoAdvertencia = document.getElementById('advertencia');
 
 function encriptarTexto(texto){
     
@@ -70,7 +71,11 @@ function desencriptarTexto(texto){
 }
 
 function mostrarTexto(accion){
-    
+    if(entradaTexto.value == ''){
+        return
+    }
+
+
     salidaTextoAntes.style.display = "none";
     salidaTextoDespues.style.display = 'flex';
     
@@ -103,4 +108,16 @@ async function copiarTexto(){
     entradaTexto.disabled = false;
 
     alert('¡Mensaje copiado al portapapeles!')
+}
+const permitidos = /^[a-z0-9 ]+$/;
+function verificarTexto(texto){
+    if (permitidos.test(texto) || texto == ''){
+        botonEncriptar.disabled = false; 
+        botonDesencriptar.disabled = false;
+        textoAdvertencia.style.color = 'darkgrey';
+    }else{
+        botonEncriptar.disabled = true; 
+        botonDesencriptar.disabled = true;
+        textoAdvertencia.style.color = 'lightcoral';
+    }
 }

@@ -16,8 +16,8 @@
     <main>
         <div class="main-entradaTexto">
             <div class="main-entradaTexto__areaTexto">
-                <textarea name="entradaTexto" id="entradaTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-                <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+                <textarea name="entradaTexto" id="entradaTexto" oninput="verificarTexto(this.value)" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <p id="advertencia"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="main-entradaTexto__botones">
                 <input type="button" onclick="mostrarTexto('encriptar')" value="Encriptar" id="encriptar" class="botonEntradaTexto">
