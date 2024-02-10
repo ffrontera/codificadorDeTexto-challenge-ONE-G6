@@ -8,6 +8,10 @@ header img{
     height: 80%;
 }
 
+header img:hover{
+    filter: grayscale(100%) opacity(50%);
+}
+
 #entradaTexto, .texto{
     overflow-wrap: break-word;
 }
@@ -69,7 +73,7 @@ input{
     box-shadow: 1px 1px 15px lightgray;
 }
 
-.main-salidaTexto__antes{  /*GOTO: main-salidaTexto__Despues hacer flex */
+.main-salidaTexto__antes{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -98,9 +102,9 @@ h2{
 
 footer{
     height: 10dvh;
-    background-color: #0A3871;
+    /*background-color: #0A3871;*/
     text-align: center;
-    color: aliceblue;
+    color: #0A3871;
     font-size: 3.5dvh;
 }
 
@@ -110,7 +114,7 @@ li{
 }
 
 li a{
-    color: aliceblue;
+    color: #0A3871;
 }
 
 li a:hover{
@@ -130,6 +134,11 @@ li a:hover{
 
 @media (max-width: 430px) {
     
+
+    #entradaTexto{
+        height: 40dvh;
+    }
+
     input{
         width: 95%;
     }
@@ -151,16 +160,28 @@ li a:hover{
         min-height: 78dvh;
         height: auto;
     }
-    
-    #ntradaTexto{
-        height: 54dvh;
+
+    .main-entradaTexto{
+        height: 58dvh;
     }
 
     .main-salidaTexto{
         margin: 1dvh 0;
-        height: 20%;
+        min-height: 18dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
     }
 
+    .main-salidaTexto__desues{  /*GOTO: main-salidaTexto__Despues hacer flex */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3vh;
+    }
+    
     .main-salidaTexto__antes img{
         display: none;
     }
@@ -170,11 +191,12 @@ li a:hover{
     }
 }
 
-@media (min-width: 430px) and (max-width: 612px){
-
+@media (min-width: 431px) and (max-width: 912px){
+    
     #entradaTexto{
-        height: 43dvh;
+        height: 48dvh;
     }
+    
 }
 
 @media (min-width:913px) {
